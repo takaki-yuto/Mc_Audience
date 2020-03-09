@@ -1,0 +1,6 @@
+<%= form_tag '/musics', method: 'post', multipart: true do %>
+    <label>ファイル</label>
+    <%= file_field :music, :file %>
+
+    <%= submit_tag 'Send file' %>
+<% end %>

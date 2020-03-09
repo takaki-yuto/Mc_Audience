@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  --font-color: #ffffff;
+  --button-clor: #38aef0;
+  --icon-color: #ffffff;
+}
+
+.header-fixed {
+  background-color: var(--button-clor);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60px;
+  .header-box {
+    padding: 20px 20px;
+    display: flex;
+    .user-name {
+      margin-right: 20px;
+      color: var(--font-color);
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+    }
+    .friend-search {
+      margin-left: calc(100% - 25%);
+      margin-right: 20px;
+      color: var(--font-color);
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+    }
+    .logout-btn {
+      margin-right: 20px;
+      color: var(--font-color);
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+    }
+    .music-output {
+      margin-right: 20px;
+      color: var(--font-color);
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+.side-bar {
+  float: left;
+  height: 100vh;
+  width: 15%;
+  background-color: #2f3e51;
+  .mylist-bar {
+    height: calc(100vh - 100px);
+    padding: 70px 20px 0px;
+    overflow: scroll;
+    .mylist-box {
+      font-size: 15px;
+      color: var(--font-color);
+      .mylist-name {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.music-main {
+  float: left;
+  height: 100vh;
+  width: 85%;
+  background-color: #333333;
+  .music-choice-monitor {
+    height: calc(100vh - 100px);
+    overflow: scroll;
+    .music-choice-monitor-box {
+      color: var(--font-color);
+      height: 100%;
+      padding: 70px 30px 0px;
+      .mylist-music-list {
+        height: 100%;
+        .mylist-music {
+          display: flex;
+          margin-top: 20px;
+          height: 40px;
+          font-size: 20px;
+          width: 800px;
+          border-bottom: solid 3px #ffffff;
+          .music-name {
+            margin-left: 10px;
+          }
+          i {
+            margin-left: 10px;
+            margin-top: 5px;
+          }
+          .music-number {
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+  }
+  .music-play {
+    height: 100px;
+    background-color: green;
+    .music-play-box {
+      padding: 50px 50px;
+    }
+  }
+}
